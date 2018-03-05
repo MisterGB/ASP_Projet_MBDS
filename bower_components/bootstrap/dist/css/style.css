@@ -1,0 +1,396 @@
+/* CSS Global
+*/
+body{
+    background-color: #f5f5f5;  
+}
+.nav{      
+    background-color:#3d578e;     
+}
+.onglet{
+    background-color: #ddd;
+}
+.content{
+    background-color: #fff;  
+    margin: 0;
+}
+.content1{
+    background-color: #fff;   
+}
+
+.separation_mag{
+    padding-top:10px;  
+}
+.content-form{
+    background-color:#064ef2;
+}
+.separation_mag{
+    padding-top:10px;  
+}
+.list-view{
+    background-color: navy;
+}
+#navbarCollapse-1 ul li a{
+    color: navy;   
+    border-bottom: 1px solid #aaa;
+}
+.active{
+    width: 100px;
+}
+/*message table de bord*/
+.label{
+    font-size: 12px;   
+}
+.label-naissace{
+    background-color: #46BFBD;    
+}
+.label-adoption{
+     background-color: #CCC;
+}
+.label-mariage{
+    background-color: #5cb85c; 
+}
+.label-deces{
+    margin-right:  15px;
+}
+/* CSS Barre entete*/
+.navbar-default .navbar-nav  li > a {
+    color: #fff; 
+}
+.ListDeroulant ul{
+    background-color:#0f73b2; 
+
+}
+.ListDeroulant ul li{
+    color: black !important;
+}
+.ListDeroulant ul li a{
+    background-color:#0f73b2; 
+    color: black !important;
+}
+.ListDeroulant ul li a:hover { 
+    background-color: #0a4da2;
+    color:#fff !important;
+
+}
+
+/* CSS Barre de menu*/
+#navbarCollapse-1 ul li a{
+    color: navy;   
+    border-bottom: 1px solid #aaa;
+}
+.menu{
+    padding-right: 0;
+
+}
+
+.menu ul li a:hover { 
+    background-color: #0a4da2;
+    color:#fff !important;    
+}
+.menu-left{
+    background-color:#f5f5f5;   
+    line-height: 1px;
+}
+
+
+/*  CSS lightbox*/
+#LoadAjax{   
+    margin: 0 ;
+    display: none;
+    background-color: white;       
+    position: absolute;       
+    top:55px;	
+    left: 140px;
+    box-shadow: 5px 5px 10px;
+    z-index: 1001;
+    border-radius: 3px;
+}
+#viewPage{
+    margin: 0 ;
+    display: none;
+    background-color: white;       
+    position: absolute;       
+    top:55px;
+    left: 295px;
+    box-shadow: 5px 5px 10px;
+    z-index: 1001;
+    border-radius: 3px;
+}
+#Shadowx{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1000;
+} 
+#hide-table{ 
+    border-radius: 1px;
+    position: absolute;         
+    padding: 5px;
+    top:0px;
+    right:15px;
+    border-radius: 0 0 5px 0;
+    background-color: black;
+    color: #fff;
+}
+/*CSS visualisation d'erreur'*/
+
+.error {
+    border: 1px solid brown;
+    background-color: #FFE6E6;
+    padding: 1px;
+    margin-left:250px;
+    height: 20px;
+    font-family: 'verdana','Arial Narrow',Arial,sans-serif;
+    font-size:5px;
+    width: 200px;              
+}
+.error-message{
+    color: #FF0000;
+    margin: 0;
+    font-family: 'verdana','Arial Narrow',Arial,sans-serif;
+    font-size: 9px;
+    font-style: italic;
+    display:none;
+}
+.prev{
+    width: 200px;
+    height:159px;
+    float:left;
+
+}
+/* CSS formulaire*/
+
+.logoImage{
+    margin:0 5px 0 0;
+    color: #fff;
+}
+.imageMain{
+    margin:0 5px 0 0;
+    font-size: 12px;
+
+}
+.header ul li a{
+    color: #fff !important;
+}
+
+
+legend{
+    background-color: #0a4da2;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+/**/
+
+.login-form{
+    margin-top:100px ;
+    background-color: #fff;
+    border-radius: 7px;   
+    height: 300px;
+    box-shadow:8px 20px 50px #aaa;
+
+}
+.banner-log{
+    border-radius: 7px 7px 0 0;
+    background-color: #3d578e;
+    width: 100%;
+
+}
+.bouton-form{
+    background-color:  #0a4da2;
+    color: #fff;
+}
+
+/* les  css du formulaires*/ 
+#form{
+    background-color:#ebebeb;
+    width:100%;   
+    margin-top: 3px;
+}
+p{
+    margin-left: 80px;   
+    font-style:inherit;
+    font-size: 15px; 
+    font-family:'sans-serif','Arial Narrow',Arial,sans-serif;
+    margin-top:5px;
+}
+p label{
+    float: left;
+    width: 100px;
+}
+#content-log h1{
+    color: #4c57ee;
+    text-align: center;    
+}
+
+p button{
+    width: 145px;
+}
+#log-Menu ul{
+    margin:0;
+    padding:0;
+    line-height:30px;
+
+}
+#log-Menu li{
+    list-style:none;
+    float:right;
+    color: #aaa;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    margin: 0;      
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 white;
+
+}
+#log-Sign{
+    width: 100px;
+    float:right;
+    margin-top:10px;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    color: #fff;
+    line-height:40px;           
+}
+#text-Log{
+    margin-left:50px;
+    margin-top:10px;
+    line-height:40px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+}
+
+#e3 {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 300px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+/* Css DataTables */
+.dataTable{
+    border: 1px solid #0a4da2;
+}
+.sorting{
+    font-size: 12px; 
+
+}
+.th1{
+    width: 15px;
+}
+.ui-dialog-titlebar{
+    background: navy;
+}
+.dataTables_filter label{
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-size: 16px;     
+    font-weight: normal;
+}
+.dataTables_length label{
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.dataTables_filter input, select{
+    border-radius: 5px;
+    background-color: #ebebeb;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    font-size: 14px;
+}
+/*Formulaire Naissance*/
+.Add ul{
+    margin: 0;
+    border-radius: 5px;
+    font-size: 14px;
+
+
+}
+.Add ul li{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+
+}
+.Add ul li a{
+    color: #aaa;
+    text-decoration: none;
+
+}
+.Add ul li a:hover{
+    text-decoration: none;
+    background: #fff;
+    color: #064ef2;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+}
+/*CSS Ajouter un Individu */
+.ajout{    
+    background-color: navy;
+    color: #fff;   
+    margin-left:  200px;       
+    border-radius: 7px;
+    padding: 4px;
+}
+.ajout a{
+    color:#fff;
+    text-decoration: none;
+}
+strong{ 
+    margin-left: 320px; 
+}
+/*Css page administation*/
+.admin-col{
+    background: navy;
+    height: 150px;
+    border-radius: 100px;
+    padding: 2px 2px;
+    box-shadow:2px 5px 10px #aaa;
+}
+.admin-col p{
+    margin: 53px 20px 20px 53px; 
+
+}
+.admin-col p a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.admin-col:hover{
+    background: #aaa;
+}
+
+.aaa{
+    background: #000;
+}
+
+/* Couleur des cases*/
+.naissance{
+    background-color: #46BFBD;
+}
+.adoption{
+    background-color: #FDB45C;
+}
+.mariage{
+    background-color: #FF0080;
+}
+.divorce{
+    background-color: #F6CEEC;
+}
+.deces{background-color: #F7464A}
+.Password{background: #0f73b2; color:#fff;}
+
+
+/*CSS SELECT 2
+
+.select2-container .select2-choice{
+  border: none;
+  display: block;
+  float: right;
+  position: absolute;
+  padding: 0 0 0 8px;
+    overflow:n;
+}*/

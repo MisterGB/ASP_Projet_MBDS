@@ -1,0 +1,170 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeFile="Site.master.vb" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> E-ETUDIANT</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+       
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/Content/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" /> 
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css" /> 
+    <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css" /> 
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css" />
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css" />
+    <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <div class="wrapper">
+            <header class="main-header">            
+                <a href="#" class="logo">
+                    <span class="logo-mini"><b>A</b>LT</span>
+                    <span class="logo-lg"><b>E-ETUDIANT</b></span>
+                </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">        
+      </a>    
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">    
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/MisterGB.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Gerald Brutus</span>
+            </a>
+            <ul class="dropdown-menu">              
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>         
+        </ul>
+      </div>
+    </nav>
+  </header>
+     <!-- -----------------------------------------   -->
+  <aside class="main-sidebar">    
+    <section class="sidebar">    
+      <ul class="sidebar-menu" data-widget="tree">      
+        <li class="active treeview menu-open">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>           
+          </a>         
+        </li>    
+        <li class="treeview">
+          <a href="#">
+            <i class="fa  fa-edit"></i>
+            <span>Gestion des individus</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="Student.aspx"><i class="fa fa-circle-o"></i>Liste des étudiant</a></li>
+            <li><a href="AddStudent.aspx"><i class="fa fa-circle-o"></i>Ajouter un étudiant</a></li>            
+          </ul>
+        </li>       
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>Gestion des dossiers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="Notes.aspx"><i class="fa fa-circle-o"></i>Fiche des notes</a></li>
+            <li><a href="Classes.aspx"><i class="fa fa-circle-o"></i> Fiche des classes</a></li>            
+          </ul>
+        </li>
+          </ul>
+        </section>    
+     </aside>
+
+  <div class="content-wrapper">      
+       <!-- Main content -->  
+     <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>    
+  </div>
+ <footer class="main-footer">    
+    <strong>Copyright &copy; 2014-2016 <a href="#">MBDS HAITI</a>.</strong> All rights
+    reserved.
+ </footer>
+    </div>      
+</form>
+</body>
+<script src="myscripts.js"></script>
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- Sparkline -->
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- jvectormap  -->
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="bower_components/Chart.js/Chart.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard2.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- DataTable -->
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+ <script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</html>
