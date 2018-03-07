@@ -109,9 +109,15 @@
        </fieldset>                          
       </div>
      </div>
-     <div class="col-xs-8"></div>
-    <div class="col-xs-2"><button type="submit" class="btn btn-info pull-right">Sauvegarder</button></div>
-    <div class="col-xs-2"><button type="submit" class="btn btn-info pull-right">Abandonner</button> </div>
+     <div class="col-xs-8"></div>   
+    <div class="col-xs-4">
+         <p>
+               <button type="submit" class="btn btn-info pull-righ">Sauvegarder</button>     
+               <button type="reset" class="btn btn-info pull-righ">Abandonner</button> 
+        </p>
+
+    </div>
+     
     </div>      
    </form>
  </div>
@@ -131,7 +137,7 @@
             <div class="box-header with-border">
               <h3 class="box-title">Enregistrer Admission</h3>
             </div>          
-            <form role="form">
+            <form role="form" action="#" method="post">
               <div class="box-body"> 
                    <div class="col-md-12">
                     <div class="form-group row">
@@ -164,8 +170,12 @@
                     </div>
                   </div>
                   <div class="col-xs-8"></div>
-                  <div class="col-xs-2"><button type="submit" class="btn btn-info pull-right">Enregistrer</button></div>
-                  <div class="col-xs-2"><button type="submit" class="btn btn-info pull-right">Annuler</button> </div>                             
+                  <div class="col-xs-4">
+                      <p>
+                            <button type="submit" class="btn btn-info pull-righ">Enregistrer</button>     
+                            <button type="reset" class="btn btn-info pull-righ">Annuler</button> 
+                     </p> 
+                  </div>                              
               </div>          
           </div>      
    </form>

@@ -78,14 +78,17 @@
        </fieldset>                          
       </div>
      </div>
-     <div class="col-xs-8"></div>
-    <div class="col-xs-2"><button type="submit" class="btn btn-info pull-right">Sauvegarder</button></div>
-    <div class="col-xs-2"><button type="submit" class="btn btn-info pull-right">Abandonner</button> </div>
+     <div class="col-xs-9"></div>
+    <div class="col-xs-3">
+         <p>
+             <button type="submit" class="btn btn-info pull-righ">Sauvegarder</button>     
+             <button type="reset" class="btn btn-info pull-righ">Abandonner</button> 
+         </p>
+    </div>
     </div>      
    </form>
  </div>
 </div>  
 </div>
-
 </asp:Content>
 

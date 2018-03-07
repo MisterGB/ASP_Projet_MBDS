@@ -1,0 +1,68 @@
+﻿/* les  css du formulaires*/ 
+#form{
+    background-color:#ebebeb;
+    width:100%;   
+    margin-top: 3px;
+}
+p{
+    margin-left: 80px;   
+    font-style:inherit;
+    font-size: 15px; 
+    font-family:'sans-serif','Arial Narrow',Arial,sans-serif;
+    margin-top:5px;
+}
+p label{
+    float: left;
+    width: 100px;
+}
+#content-log h1{
+    color: #4c57ee;
+    text-align: center;    
+}
+
+p button{
+    width: 145px;
+}
+#log-Menu ul{
+    margin:0;
+    padding:0;
+    line-height:30px;
+
+}
+#log-Menu li{
+    list-style:none;
+    float:right;
+    color: #aaa;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    margin: 0;      
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 white;
+
+}
+#log-Sign{
+    width: 100px;
+    float:right;
+    margin-top:10px;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+    color: #fff;
+    line-height:40px;           
+}
+#text-Log{
+    margin-left:50px;
+    margin-top:10px;
+    line-height:40px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+}
+
+#e3 {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    width: 300px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
